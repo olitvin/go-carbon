@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lomik/go-carbon/points"
+	"github.com/olitvin/go-carbon/points"
 )
 
 func TestProtobuf(t *testing.T) {

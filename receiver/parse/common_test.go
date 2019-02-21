@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/lomik/go-carbon/points"
+	"github.com/olitvin/go-carbon/points"
 	"github.com/stretchr/testify/assert"
 )
 

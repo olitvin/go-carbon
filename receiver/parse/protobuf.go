@@ -4,8 +4,8 @@ import (
 	"errors"
 
 	"github.com/gogo/protobuf/proto"
-	"github.com/lomik/go-carbon/helper/carbonpb"
-	"github.com/lomik/go-carbon/points"
+	"github.com/olitvin/go-carbon/helper/carbonpb"
+	"github.com/olitvin/go-carbon/points"
 )
 
 func Protobuf(body []byte) ([]*points.Points, error) {

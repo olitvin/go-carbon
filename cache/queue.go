@@ -5,7 +5,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/lomik/go-carbon/points"
+	"github.com/olitvin/go-carbon/points"
 )
 
 type queueItem struct {

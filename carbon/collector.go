@@ -9,8 +9,8 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/lomik/go-carbon/helper"
-	"github.com/lomik/go-carbon/points"
+	"github.com/olitvin/go-carbon/helper"
+	"github.com/olitvin/go-carbon/points"
 	"github.com/lomik/zapwriter"
 )
 

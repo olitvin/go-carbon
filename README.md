@@ -53,10 +53,10 @@ The result of that effort (in points per second):
 Stable performance was around 950k points per second with short-term peak performance of 1.2M points/sec.
 
 ## Installation
-Use binary packages from [releases page](https://github.com/lomik/go-carbon/releases) or build manually (requires golang 1.8+):
+Use binary packages from [releases page](https://github.com/olitvin/go-carbon/releases) or build manually (requires golang 1.8+):
 ```
 # build binary
-git clone https://github.com/lomik/go-carbon.git
+git clone https://github.com/olitvin/go-carbon.git
 cd go-carbon
 make
 ```
@@ -106,7 +106,7 @@ sparse-create = false
 flock = false
 enabled = true
 # Use hashed filenames for tagged metrics instead of human readable
-# https://github.com/lomik/go-carbon/pull/225
+# https://github.com/olitvin/go-carbon/pull/225
 hash-filenames = true
 
 [cache]
@@ -169,7 +169,7 @@ buffer-size = 0
 # [receiver.protobuf]
 # protocol = "protobuf"
 # # Same framing protocol as pickle, but message encoded in protobuf format
-# # See https://github.com/lomik/go-carbon/blob/master/helper/carbonpb/carbon.proto
+# # See https://github.com/olitvin/go-carbon/blob/master/helper/carbonpb/carbon.proto
 # listen = ":2005"
 # # Limit message size for prevent memory overflow
 # max-message-size = 67108864
@@ -253,8 +253,8 @@ enabled = true
 read-timeout = "30s"
 
 # grpc api
-# protocol: https://github.com/lomik/go-carbon/blob/master/helper/carbonpb/carbon.proto
-# samples: https://github.com/lomik/go-carbon/tree/master/api/sample
+# protocol: https://github.com/olitvin/go-carbon/blob/master/helper/carbonpb/carbon.proto
+# samples: https://github.com/olitvin/go-carbon/tree/master/api/sample
 [grpc]
 listen = "127.0.0.1:7003"
 enabled = true

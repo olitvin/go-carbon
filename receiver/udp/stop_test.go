@@ -4,7 +4,7 @@ import (
 	"net"
 	"testing"
 
-	"github.com/lomik/go-carbon/receiver"
+	"github.com/olitvin/go-carbon/receiver"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -12,9 +12,9 @@ import (
 	whisper "github.com/go-graphite/go-whisper"
 	"go.uber.org/zap"
 
-	"github.com/lomik/go-carbon/helper"
-	"github.com/lomik/go-carbon/points"
-	"github.com/lomik/go-carbon/tags"
+	"github.com/olitvin/go-carbon/helper"
+	"github.com/olitvin/go-carbon/points"
+	"github.com/olitvin/go-carbon/tags"
 	"github.com/lomik/zapwriter"
 )
 

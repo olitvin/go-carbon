@@ -3,7 +3,7 @@ package cache
 import (
 	"testing"
 
-	"github.com/lomik/go-carbon/points"
+	"github.com/olitvin/go-carbon/points"
 )
 
 func TestInFlight(t *testing.T) {

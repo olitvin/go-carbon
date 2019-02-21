@@ -10,7 +10,7 @@ import (
 	"go.uber.org/zap"
 
 	"github.com/go-graphite/go-whisper"
-	"github.com/lomik/go-carbon/points"
+	"github.com/olitvin/go-carbon/points"
 )
 
 type Metadata struct {

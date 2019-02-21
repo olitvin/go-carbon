@@ -13,7 +13,7 @@ import (
 	"github.com/syndtr/goleveldb/leveldb/opt"
 	"go.uber.org/zap"
 
-	"github.com/lomik/go-carbon/helper"
+	"github.com/olitvin/go-carbon/helper"
 	"github.com/lomik/zapwriter"
 )
 

@@ -7,8 +7,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/lomik/go-carbon/points"
-	"github.com/lomik/go-carbon/receiver"
+	"github.com/olitvin/go-carbon/points"
+	"github.com/olitvin/go-carbon/receiver"
 	"github.com/lomik/zapwriter"
 )
 

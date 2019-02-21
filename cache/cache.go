@@ -11,9 +11,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/lomik/go-carbon/helper"
-	"github.com/lomik/go-carbon/points"
-	"github.com/lomik/go-carbon/tags"
+	"github.com/olitvin/go-carbon/helper"
+	"github.com/olitvin/go-carbon/points"
+	"github.com/olitvin/go-carbon/tags"
 )
 
 type WriteStrategy int

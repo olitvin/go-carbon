@@ -7,8 +7,8 @@ import (
 	"sync"
 
 	"github.com/BurntSushi/toml"
-	"github.com/lomik/go-carbon/helper"
-	"github.com/lomik/go-carbon/points"
+	"github.com/olitvin/go-carbon/helper"
+	"github.com/olitvin/go-carbon/points"
 )
 
 type Receiver interface {

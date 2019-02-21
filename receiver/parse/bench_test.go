@@ -3,7 +3,7 @@ package parse
 import (
 	"testing"
 
-	"github.com/lomik/go-carbon/points"
+	"github.com/olitvin/go-carbon/points"
 )
 
 // benchmarks

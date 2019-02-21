@@ -1,7 +1,7 @@
 NAME:=go-carbon
 MAINTAINER:="Roman Lomonosov <r.lomonosov@gmail.com>"
 DESCRIPTION:="Golang implementation of Graphite/Carbon server"
-MODULE:=github.com/lomik/go-carbon
+MODULE:=github.com/olitvin/go-carbon
 
 GO ?= go
 export GOPATH := $(CURDIR)/_vendor

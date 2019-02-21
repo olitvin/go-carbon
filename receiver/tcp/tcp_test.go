@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/lomik/go-carbon/points"
-	"github.com/lomik/go-carbon/receiver"
+	"github.com/olitvin/go-carbon/points"
+	"github.com/olitvin/go-carbon/receiver"
 )
 
 type tcpTestCase struct {

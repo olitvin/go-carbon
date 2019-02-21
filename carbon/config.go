@@ -10,9 +10,9 @@ import (
 	"time"
 
 	"github.com/BurntSushi/toml"
-	"github.com/lomik/go-carbon/persister"
-	"github.com/lomik/go-carbon/receiver/tcp"
-	"github.com/lomik/go-carbon/receiver/udp"
+	"github.com/olitvin/go-carbon/persister"
+	"github.com/olitvin/go-carbon/receiver/tcp"
+	"github.com/olitvin/go-carbon/receiver/udp"
 	"github.com/lomik/zapwriter"
 )
 
