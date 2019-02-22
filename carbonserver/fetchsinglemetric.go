@@ -1,6 +1,7 @@
 package carbonserver
 
 import (
+	"encoding/json"
 	"errors"
 	"math"
 	"sync/atomic"
@@ -132,12 +133,14 @@ func (listener *CarbonserverListener) fetchSingleMetric(metric string, pathExpre
 	logger.Debug("fetched",
 		zap.Any("response", resp),
 	)
+	jresp, _ := json.Marshal(resp)
+
 	logger.Debug("--------", zap.Any("params", map[string]interface{}{
 		"metric":         metric,
 		"pathExpression": pathExpression,
 		"fromTime":       fromTime,
 		"untilTime":      untilTime,
-		"resp":           resp,
+		"resp":           string(jresp),
 		"m":              m,
 	}))
 
