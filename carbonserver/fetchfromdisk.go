@@ -73,6 +73,12 @@ func (listener *CarbonserverListener) fetchFromDisk(metric string, fromTime, unt
 			ConsolidationFunc: w.AggregationMethod(),
 			XFilesFactor:      w.XFilesFactor(),
 		},
+		CacheData: []points.Point{
+			points.Point{
+				Value:     float64(0),
+				Timestamp: int64(fromTime),
+			},
+		},
 	}
 	if step != bestStep {
 		logger.Debug("cache is not supported for this query (required step != best step)",
