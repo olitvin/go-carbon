@@ -132,6 +132,12 @@ func (listener *CarbonserverListener) fetchSingleMetric(metric string, pathExpre
 	logger.Debug("fetched",
 		zap.Any("response", resp),
 	)
+	logger.Debug("--------", zap.Any("params", map[string]interface{}{
+		"metric":         metric,
+		"pathExpression": pathExpression,
+		"fromTime":       fromTime,
+		"untilTime":      untilTime,
+	}))
 
 	return resp, nil
 }
