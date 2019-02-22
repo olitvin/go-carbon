@@ -78,6 +78,10 @@ func (listener *CarbonserverListener) fetchFromDisk(metric string, fromTime, unt
 				Value:     float64(0),
 				Timestamp: int64(fromTime),
 			},
+			points.Point{
+				Value:     float64(0),
+				Timestamp: int64(untilTime),
+			},
 		},
 	}
 	if step != bestStep {
