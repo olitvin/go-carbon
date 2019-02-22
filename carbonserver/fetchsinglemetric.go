@@ -28,6 +28,13 @@ type response struct {
 
 func (r response) enrichFromCache(listener *CarbonserverListener, m *metricFromDisk) {
 	if m.CacheData == nil {
+		atomic.AddUint64(&listener.metrics.CacheRequestsTotal, 0)
+
+		atomic.AddUint64(&listener.metrics.CacheWorkTimeNS, 0)
+		listener.prometheus.cacheDuration("work", 0)
+
+		listener.prometheus.cacheRequest("metric", false)
+		atomic.AddUint64(&listener.metrics.CacheHit, 0)
 		return
 	}
 
