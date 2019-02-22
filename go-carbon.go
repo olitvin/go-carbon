@@ -47,6 +47,7 @@ func httpServe(addr string) (func(), error) {
 }
 
 func main() {
+	log.Println("init")
 	var err error
 
 	/* CONFIG start */
@@ -99,6 +100,9 @@ func main() {
 	var runAsUser *user.User
 	if cfg.Common.User != "" {
 		runAsUser, err = user.Lookup(cfg.Common.User)
+		if err != nil {
+			runAsUser, err = user.Current()
+		}
 		if err != nil {
 			log.Fatal(err)
 		}
@@ -210,6 +214,7 @@ func main() {
 		}
 	}()
 
+	log.Println("--- started ---")
 	app.Loop()
 
 	mainLogger.Info("stopped")
