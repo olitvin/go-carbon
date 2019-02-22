@@ -137,6 +137,8 @@ func (listener *CarbonserverListener) fetchSingleMetric(metric string, pathExpre
 		"pathExpression": pathExpression,
 		"fromTime":       fromTime,
 		"untilTime":      untilTime,
+		"resp":           resp,
+		"m":              m,
 	}))
 
 	return resp, nil
